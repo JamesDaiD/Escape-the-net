@@ -1,0 +1,18 @@
+#inpFound
+{
+    margin-top:100vh;
+}
+
+#inpMain
+{
+    margin-bottom:20vh;
+}
+
+#btnGo
+{
+    position: relative;
+    top:2vw;
+    right: -80px;
+    z-index: 999;
+    transition: 0.3s;
+}

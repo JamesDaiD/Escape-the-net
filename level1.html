@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content = "puzzle, fun">
+        <meta name="description" content = "Challenge yourself with these fun games">
+        <title>Level 1</title>
+        <link href=main.css rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="topBar">
+            <h1 id="title">Escape the web!</h1>
+        </div>
+
+        <div id="rightBar">
+            <table id="wrongTable">
+
+            </table>
+        </div>
+    
+        <div id="leftNav" onmouseover="ExpandLeftNav()" onmouseout="CloseLeftNav()">
+            <table>
+                <tr id="navButton" onclick="location.href = 'level1.html';">
+                    <td><img src="img/jigsaw.png" id="navIcon"></td>
+                    <td class="navText">Play</td>
+                </tr>
+                <tr id="navButton" onclick="location.href = 'shop.html';">
+                    <td><img src="img/shopping-cart.png" id="navIcon"></td>
+                    <td class="navText"><p >Shop</p> </td>
+                </tr>
+                <tr id="navButton" onclick="location.href = 'log.html';">
+                    <td><img src="img/log-file.png" id="navIcon"></td>
+                    <td class="navText"><p >History</p> </td>
+                </tr>
+                <tr id="navButton" onclick="location.href = 'about.html';">
+                    <td><img src="img/trophy.png" id="navIcon"></td>
+                    <td class="navText">Highscore</td>
+                </tr>
+                <tr id="navButton" onclick="location.href = 'about.html';">
+                    <td><img src="img/about.png" id="navIcon"></td>
+                    <td class="navText">About</td>
+                </tr>
+            </table>
+            
+            <!--Icons made by Monkik, Flat Icons, icongeek26, freepik-->
+        </div>
+        <div id="content"> 
+            <div id="instruction">
+                <p>Each level has a password.
+                    Try and guess it using the given hint to pass the level.<br>
+                    Type "help" for more hints</p>
+                <br>
+                <div id="input">
+                    <input type="text" id="inpMain" placeholder="Make your guess!">
+                    <input type="button" id="btnGo" value="Go!" onclick="Validate()">
+                </div>
+            </div>
+
+            <div id="hint0">
+                <img src="img/HelloSheet.png">
+            </div>
+            <div id="hint1">
+                <img src="img/RichieFlat.jpg">
+            </div>
+            <div id="hint2">
+                <img src="img/Richie.jpg">
+            </div>
+            <div id="hint3">
+                <img src="img/HelloSingleCover.jpg">
+            </div>
+
+            <div id="congrats">
+                <h2>You got it! Congratulations!!!</h2>
+                <input type="button" id="nextLevel" value = "Move to the next Level" onclick="Finish()">
+                <br>
+                <!-- This Iframe will not work as YouTube doesn't allow video playing in c:/ domain -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b_ILDFp5DGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            
+        </div>
+
+        <div id="footer">
+            <footer>
+                <p>Good luck!</p>
+            </footer>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="level1.js"></script>
+    </body>
+</html>

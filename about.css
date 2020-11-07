@@ -1,0 +1,33 @@
+form    {
+    display:table;
+    width: 60vw;
+}
+form label{
+    margin:0.5% 1em 0 0;
+    vertical-align: center;
+    display:inline-block;
+    width:7vw;
+    text-align:right;
+}
+form input{
+    display:inline-flex;
+    margin:1.5% 0 1.5% 0;        
+}
+form #feedback{
+    vertical-align: top;
+    margin:1.5% 0 1.5% 0;        
+}
+#Submit{
+    box-shadow: 2px 1px 2px 2px darkmagenta;
+    background-color: #4CAF50;
+    margin: 4px 2px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-left: 8vw;
+}

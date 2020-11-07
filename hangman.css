@@ -1,0 +1,54 @@
+#content{
+    display:block;
+}
+#AlphabetTable{
+    border-spacing: 8px;
+}
+#AlphabetTable td{
+    border: black 1px solid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15%;
+}
+
+#stickImg{
+    display:block;
+    margin:auto;
+    height: 100%;
+}
+#buttonsDiv{
+    text-align:center;
+    /* background-color: blue; */
+    clear:both;
+}
+#AlphabetDiv{
+    margin-top: 5vh;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.8em;
+    color: gray;
+}
+#AlphabetTable{
+    margin:auto;
+}
+#Blanks{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+#Feedback{
+    text-align: center;
+}
+.charButton{
+    box-shadow: 1px 1px 1px 1px black;
+}
+.pButtons{
+    border: none;
+    padding: 8px;
+    background-color: lightskyblue;
+    border-radius: 7%;
+}
+#stickContainer{
+    height: 200px;
+}

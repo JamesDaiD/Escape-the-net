@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="puzzle, fun">
+    <meta name="description" content="Challenge yourself with these fun games">
+    <title>Shop</title>
+    <link href=main.css rel="stylesheet">
+    <link href=shop.css rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="topBar">
+        <h1 id="title">Escape the web!</h1>
+    </div>
+
+    <div id="rightBar">
+        <p>Guesses here</p>
+    </div>
+
+    <div id="leftNav" onmouseover="ExpandLeftNav()" onmouseout="CloseLeftNav()">
+        <table>
+            <tr id="navButton" onclick="location.href = 'level1.html';">
+                <td><img src="img/jigsaw.png" id="navIcon"></td>
+                <td class="navText">Play</td>
+            </tr>
+            <tr id="navButton" onclick="location.href = 'shop.html';">
+                <td><img src="img/shopping-cart.png" id="navIcon"></td>
+                <td class="navText">
+                    <p>Shop</p>
+                </td>
+            </tr>
+            <tr id="navButton" onclick="location.href = 'log.html';">
+                <td><img src="img/log-file.png" id="navIcon"></td>
+                <td class="navText">
+                    <p>History</p>
+                </td>
+            </tr>
+            <tr id="navButton" onclick="location.href = 'about.html';">
+                <td><img src="img/trophy.png" id="navIcon"></td>
+                <td class="navText">Highscore</td>
+            </tr>
+            <tr id="navButton" onclick="location.href = 'about.html';">
+                <td><img src="img/about.png" id="navIcon"></td>
+                <td class="navText">About</td>
+            </tr>
+        </table>
+
+        <!--Icons made by Monkik, Flat Icons, icongeek26, freepik-->
+    </div>
+
+    <div id="content">
+
+        <div id="modal">
+            <a href="javascript:void(0)" id="closeBtn" onclick="closeNav()">&times;</a>
+            <div id="cartContent">
+                <table id="cart">
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Image</th>
+                    </tr>
+                </table>
+                <br>
+                <p id="total"></p>
+            </div>
+        </div>
+
+        <table id="cap" class="forSale">
+            <tr>
+                <td colspan="2" id="iICell">
+                    <img src="img/puzzle-cap.jpg" id="iImage">
+                    <div id="hoverText">
+                        <p>Totally awesome cap. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore laudantium, eius sunt quo vitae unde nostrum ipsam impedit quis esse maiores voluptatibus. Ratione aperiam illo distinctio quod quisquam
+                            ipsum?
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="iName">Puzzle Cap</td>
+                <td id="iPrice">$8</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="cellATC"><input type="image" src="img/basket.png" id="aBasket" class ="addCartBtn" ></input>
+                </td>
+            </tr>
+        </table>
+
+        <table id="shirt" class="forSale">
+            <tr>
+                <td colspan="2" id="iICell">
+                    <img src="img/puzzle-shirt.jpg" id="iImage">
+                    <div id="hoverText">
+                        <p>Super seducting T-shirt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore laudantium, eius sunt quo vitae unde nostrum ipsam impedit quis esse maiores voluptatibus. Ratione aperiam illo distinctio quod
+                            quisquam ipsum?
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="iName">Puzzle T-shirt</td>
+                <td id="iPrice">$15</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="cellATC"><input type="image" src="img/basket.png" id="aBasket" class ="addCartBtn" ></input>
+                </td>
+            </tr>
+        </table>
+
+        <table id="rubik" class="forSale">
+            <tr>
+                <td colspan="2" id="iICell"><img src="img/rubik'scube.jpg" id="iImage">
+                    <div id="hoverText">
+                        <p>Best selling toy of all time. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore laudantium, eius sunt quo vitae unde nostrum ipsam impedit quis esse maiores voluptatibus. Ratione aperiam illo distinctio
+                            quod quisquam ipsum?</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="iName">Rubik's Cube</td>
+                <td id="iPrice">$20</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="cellATC"><input type="image" src="img/basket.png" id="aBasket" class ="addCartBtn" ></input>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="footer">
+        <footer>
+            <p>Good luck!</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="shop.js"></script>
+
+</body>
+
+</html>
